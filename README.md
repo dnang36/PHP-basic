@@ -343,6 +343,10 @@ foreach ($array as $value){
     // 9
 ?>
 ````
+12. Hàm chop(): Dùng để loại bỏ các khoảng trắng hoặc các ký tự được chỉ định .Cú pháp : chop($string, charlist)
+13. chunk_split: Cắt chuỗi thành nhiều chuỗi nhỏ hơn .Cú pháp chunk_split($string, lengtg, separator)
+14. explode: Ngắt 1 chuỗi sang 1 mảng: Cú pháp : explode(separator,$string, $limit )
+
 
 ## Array functions
 1. array_push(): chèn phần tử vào cuối mảng
@@ -430,6 +434,33 @@ foreach ($array as $value){
     )
      */
 ````
+10. array_chunk: Dùng để cắt mảng thành các mảng con. $array_chunk(array,size);
+````php
+$array = ['nguyen','doan','dang','nam','dinh'];
+print_r(array_chunk($array,3));
+//output: 
+Array
+(
+ [0] => Array
+    (
+        [0] => nguyen
+        [1] => doan
+    )
+
+ [1] => Array
+     (
+         [2] => dang
+         [3] => nam
+     )
+
+ [2] => Array
+     (
+         [4] => dinh
+     )
+
+ )
+````
+
 ## File handling
 - Xử lý tệp là một phần quan trọng của bất kỳ ứng dụng web nào. Bạn thường cần mở và xử lý một tệp cho các tác vụ khác nhau.
 1. fopen(command,mode); mở file
